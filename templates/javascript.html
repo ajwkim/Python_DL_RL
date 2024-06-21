@@ -1,0 +1,12 @@
+<form action="transaction" method="POST" onsubmit="toEnabled()">
+    보내는 지갑주소 : <input name="sender" value="보내는 주소(수정불가)" disabled /> <br>
+    받는 지갑주소  : <input type="text" name="receiver" /> <br>
+    보낼 코인     : <input type="text" name="sendable_coin" />
+    <input type="submit" value="코인 보내기" />
+</form>
+
+<script type="text/javascript">
+    function toEnabled() {
+        $("input[name=sender]").attr("disabled", false);
+    }
+</script>
